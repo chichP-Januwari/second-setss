@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eyy7df64mmkn"
-path="res://.godot/imported/LB_Prototype_Environment.png-dbb2568b93fcd4a8c25dc8438e2e5b1b.ctex"
+uid="uid://cqjfubyxxsjhx"
+path="res://.godot/imported/monochrome_tilemap_transparent_packed.png-c3c6dd433f4d5a12fe1176d67c7e1d6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/LB_Prototype_Environment.png"
-dest_files=["res://.godot/imported/LB_Prototype_Environment.png-dbb2568b93fcd4a8c25dc8438e2e5b1b.ctex"]
+source_file="res://assets/Tilemap/monochrome_tilemap_transparent_packed.png"
+dest_files=["res://.godot/imported/monochrome_tilemap_transparent_packed.png-c3c6dd433f4d5a12fe1176d67c7e1d6a.ctex"]
 
 [params]
 
