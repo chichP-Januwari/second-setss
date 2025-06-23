@@ -1,7 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://dlvb87dv55iq0"]
+[gd_scene load_steps=9 format=3 uid="uid://dlvb87dv55iq0"]
 
 [ext_resource type="Texture2D" uid="uid://dh4imfdhwf0sc" path="res://assets/sprites/frank_idle.png" id="1_rp718"]
-[ext_resource type="Script" uid="uid://cs37qrgy2sa2r" path="res://scripts/controllers/state_machine.gd" id="2_yewv4"]
+[ext_resource type="Script" uid="uid://d1d7ksohds0lb" path="res://scripts/controllers/player.gd" id="1_yewv4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yewv4"]
 size = Vector2(9, 32)
@@ -42,45 +42,10 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="Animation" id="Animation_eojnx"]
-resource_name = "frank_idle"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"frank_idle"]
-}
-
-[sub_resource type="Animation" id="Animation_qgnko"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprites:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"frank_idle"]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_7vyk4"]
-_data = {
-&"RESET": SubResource("Animation_qgnko"),
-&"frank_idle": SubResource("Animation_eojnx")
-}
-
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_yewv4")
 
-[node name="HitboxComponent" type="CollisionShape2D" parent="."]
+[node name="Hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -16)
 shape = SubResource("RectangleShape2D_yewv4")
 
@@ -89,12 +54,4 @@ position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_6eyoc")
 animation = &"frank_idle"
 autoplay = "frank_idle"
-frame_progress = 0.500778
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_7vyk4")
-}
-
-[node name="StateMachine" type="Node" parent="."]
-script = ExtResource("2_yewv4")
+frame_progress = 0.0270321
