@@ -1,10 +1,12 @@
 [gd_scene load_steps=5 format=4 uid="uid://b3qagvj8xns2e"]
 
-[ext_resource type="Texture2D" uid="uid://cqjfubyxxsjhx" path="res://assets/Tilemap/monochrome_tilemap_transparent_packed.png" id="1_jbqir"]
 [ext_resource type="PackedScene" uid="uid://cbvl6exx0sv85" path="res://scenes/player.tscn" id="2_yautc"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jbqir"]
+load_path = "res://.godot/imported/monochrome_tilemap_transparent_packed.png-c3c6dd433f4d5a12fe1176d67c7e1d6a.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yautc"]
-texture = ExtResource("1_jbqir")
+texture = SubResource("CompressedTexture2D_jbqir")
 3:0/0 = 0
 5:0/0 = 0
 3:1/0 = 0

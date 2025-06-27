@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://tk08ojsprwfm"]
+
+[ext_resource type="Script" uid="uid://br430xkn6c5ci" path="res://scripts/vault_area.gd" id="1_2k58l"]
+[ext_resource type="Texture2D" uid="uid://dcjqi37rr5qg0" path="res://assets/TilesetWorld.png" id="2_lu5bc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xo5ow"]
+size = Vector2(16, 16)
+
+[node name="Vault" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_2k58l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xo5ow")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_lu5bc")
+hframes = 9
+vframes = 9
+frame = 80

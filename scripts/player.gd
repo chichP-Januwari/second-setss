@@ -25,6 +25,9 @@ var was_on_wall: bool = false
 var coyote_timer: float = 0.0
 var jump_buffer_timer: float = 0.0
 
+# NEW: Movement history for reverse playback enemy
+var movement_history: Array = []
+
 func _ready():
 	anim.animation_finished.connect(_on_animation_finished)
 
@@ -105,6 +108,18 @@ func _physics_process(delta):
 			start_roll()
 
 	move_and_slide()
+
+	# NEW: Record movement and animation state for playback
+	movement_history.append({
+		"position": global_position,
+		"facing_direction": facing_direction,
+		"animation": animsprite.animation,
+		"animation_flip": animsprite.flip_h
+	})
+
+# Limit history size to ~60 seconds at 60 FPS (3600 frames)
+	if movement_history.size() > 3600:
+		movement_history.pop_front()
 
 func is_touching_wall() -> bool:
 	return $WallRay.is_colliding()

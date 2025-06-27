@@ -179,7 +179,7 @@ shape = SubResource("RectangleShape2D_u8vuu")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_qlg0r")
-animation = &"sinatra_wall"
+animation = &"sinatra_idle"
 autoplay = "sinatra_idle"
 
 [node name="WallRay" type="RayCast2D" parent="."]

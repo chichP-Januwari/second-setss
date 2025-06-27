@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccm0l4exa2680"]
+
+[ext_resource type="Script" uid="uid://bty5at8sq44qt" path="res://scripts/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="FontFile" uid="uid://d03edcebpcl55" path="res://assets/Jersey10-Regular.ttf" id="2_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://ca3urm3732jer" path="res://assets/title.png" id="2_wu84c"]
+
+[sub_resource type="Theme" id="Theme_wu84c"]
+default_font = ExtResource("2_bqqt6")
+default_font_size = 26
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ekxnf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+offset_left = -320.0
+offset_top = -180.0
+offset_right = 320.0
+offset_bottom = 180.0
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = -160.0
+offset_top = -120.0
+offset_right = 160.0
+offset_bottom = 120.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_wu84c")
+expand_mode = 5
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_wu84c")
+text = "Play"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]

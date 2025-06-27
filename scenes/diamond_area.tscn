@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://2ound5v6vt4m"]
+
+[ext_resource type="Script" uid="uid://ci20fdhmy7m5j" path="res://scripts/diamond_area.gd" id="1_fc6d0"]
+[ext_resource type="Texture2D" uid="uid://dcjqi37rr5qg0" path="res://assets/TilesetWorld.png" id="2_acsn1"]
+[ext_resource type="PackedScene" uid="uid://uqiet3ux2rhv" path="res://scenes/enemy.tscn" id="2_xo5ow"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xo5ow"]
+size = Vector2(16, 16)
+
+[node name="DiamondArea" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_fc6d0")
+enemy_scene = ExtResource("2_xo5ow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_xo5ow")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_acsn1")
+hframes = 9
+vframes = 9
+frame = 79
