@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csf44vnklnmty"
-path="res://.godot/imported/Finn falling.png-4f44e599ba5bfc9d77ceb2847b0ffc66.ctex"
+uid="uid://c10g6ek8w033x"
+path="res://.godot/imported/sinatra_walljump.png-39933b808c0f0b69bd2fc463601fc56d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/1-bit explorer/Finn falling.png"
-dest_files=["res://.godot/imported/Finn falling.png-4f44e599ba5bfc9d77ceb2847b0ffc66.ctex"]
+source_file="res://assets/characters/sinatra_walljump.png"
+dest_files=["res://.godot/imported/sinatra_walljump.png-39933b808c0f0b69bd2fc463601fc56d.ctex"]
 
 [params]
 

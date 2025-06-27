@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqjfubyxxsjhx"
-path="res://.godot/imported/monochrome_tilemap_transparent_packed.png-c3c6dd433f4d5a12fe1176d67c7e1d6a.ctex"
+uid="uid://hl6g2j7lh8ip"
+path="res://.godot/imported/sinatra_slide.png-ca474baf98e8ad079d25ea7e481d173f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tilemap/monochrome_tilemap_transparent_packed.png"
-dest_files=["res://.godot/imported/monochrome_tilemap_transparent_packed.png-c3c6dd433f4d5a12fe1176d67c7e1d6a.ctex"]
+source_file="res://assets/characters/sinatra_slide.png"
+dest_files=["res://.godot/imported/sinatra_slide.png-ca474baf98e8ad079d25ea7e481d173f.ctex"]
 
 [params]
 

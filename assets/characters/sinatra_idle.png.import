@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d38c1v2q7oc12"
-path="res://.godot/imported/Finn die.png-dbc83711b3d0832e6b46492e60ee6a29.ctex"
+uid="uid://cqcxtg6kfdgem"
+path="res://.godot/imported/sinatra_idle.png-17a6682898ae379390d127a9f93429db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/1-bit explorer/Finn die.png"
-dest_files=["res://.godot/imported/Finn die.png-dbc83711b3d0832e6b46492e60ee6a29.ctex"]
+source_file="res://assets/characters/sinatra_idle.png"
+dest_files=["res://.godot/imported/sinatra_idle.png-17a6682898ae379390d127a9f93429db.ctex"]
 
 [params]
 
